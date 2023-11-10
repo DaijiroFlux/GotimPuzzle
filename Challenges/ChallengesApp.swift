@@ -11,7 +11,7 @@ import SwiftUI
 struct ChallengesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CalculateCircleArea()
         }
     }
 }
