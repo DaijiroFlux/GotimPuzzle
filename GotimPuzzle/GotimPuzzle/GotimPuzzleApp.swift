@@ -11,7 +11,7 @@ import SwiftUI
 struct GotimPuzzleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PuzzleGameView()
         }
     }
 }
