@@ -22,7 +22,7 @@ class PuzzleViewModel: ObservableObject {
 
     func initializeTiles() {
         // Change "image1", "image2", ..., "image8", "empty" with your image asset names
-        let imageNames = (1...8).map { "image\($0)" } + ["empty"]
+        let imageNames = (1...8).map { "gotimHand\($0)" } + ["empty"]
         let tileIDs = Array(1...imageNames.count)
         let tiles = zip(tileIDs, imageNames).map { Tile(id: $0, imageName: $1) }
         self.tiles = tiles.shuffled() // Shuffling the tiles at the beginning
